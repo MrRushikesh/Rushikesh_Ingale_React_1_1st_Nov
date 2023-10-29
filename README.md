@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Counter App Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Link -: 
 
-## Available Scripts
+<a href="https://reactassignment-counterapp.netlify.app/">Click Here</a>
 
-In the project directory, you can run:
+## Overview -: 
 
-### `npm start`
+- The Counter App is a simple React application that allows users to increment, decrement, and reset the count value. It includes a visual display of the count, increment and decrement buttons, and a conditional "GO BACK TO 0" button based on certain count values.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features -: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Increment and decrement buttons to modify the count value.
+- Validation to prevent count from going below 0.
+- Conditional display of "GO BACK TO 0" button if count exceeds 10.
+- Responsive design for various screen sizes.
+- Folder Structure
 
-### `npm run build`
+        counter-app
+        │   README.md
+        │
+        └───src
+            │
+            └───components
+            │   │   Counter.js
+            │
+            └───App.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* src/components/Counter.js
+- This file contains the code for the counter functionality.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* src/App.js
+- Main application file containing useState and useEffect hooks, managing the state of the counter.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Implementation Details -: 
 
-### `npm run eject`
+### State Management -: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Utilizes useState to manage the count state in the App.js file.
+- useEffect is used to log the count value every time it changes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Counter Functionality -: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Provides buttons for incrementing and decrementing the count value.
+- Displays an alert if the count tries to go below 0.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Conditional Rendering -: 
 
-## Learn More
+- Renders the "GO BACK TO 0" button conditionally if the count exceeds 10.
+- Clicking the button resets the count to 0.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Responsive Design -: 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The app is designed to be responsive across different screen sizes to ensure a consistent user experience.
 
-### Code Splitting
+### File Structure & Comments -: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- All code is properly organized within folders and files.
+- Includes comments to explain functionality, improve readability, and aid in understanding the codebase.
+- Instructions for Running the Application
 
-### Analyzing the Bundle Size
+### Ensure you have Node.js and npm installed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Clone the project repository from GitHub.
+- Navigate to the project directory in the terminal.
+- Run npm install to install the necessary dependencies.
+- Run npm start to start the React development server.
+- Access the application via the provided URL.
 
-### Making a Progressive Web App
+## Conclusion -: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- The Counter App provides a simple and intuitive interface for users to interact with a count variable. It incorporates necessary functionalities and a responsive design to offer a smooth user experience. The codebase is structured and well-documented, facilitating understanding and maintenance.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy using the Counter App!
