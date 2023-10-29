@@ -19,7 +19,8 @@ export function Counter(){
         if(count > 0){
             setState(count - 1)
         }else{
-            setError("Can not go Below 0")
+            setError("Can not go below 0")
+            alert("Number can not go below 0")
         }  
     }
 
@@ -42,7 +43,11 @@ export function Counter(){
             <div className="btn-container">
                 <button className="btn btn-success" onClick={increment}>Increment</button>
                 <button className="btn btn-warning" onClick={decrement}>Decrement</button>
-                <button className="btn btn-danger" onClick={goback}>Go Back to 0</button>
+                {
+                    count > 10 && (
+                        <button className="btn btn-danger" onClick={goback}>Go Back to 0</button>
+                    )
+                }
             </div>   
        </div>
     </div>

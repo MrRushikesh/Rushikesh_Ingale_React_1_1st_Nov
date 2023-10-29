@@ -2,13 +2,11 @@
 
 ## Live Link -: 
 
-<a href="https://reactassignment-counterapp.netlify.app/">Click Here</a>
+<a href="https://reactapp-counterapp.netlify.app/">Click Here</a>
 
 ## Overview -: 
 
 - The Counter App is a simple React application that allows users to increment, decrement, and reset the count value. It includes a visual display of the count, increment and decrement buttons, and a conditional "GO BACK TO 0" button based on certain count values.
-
-
 
 ## Features -: 
 
